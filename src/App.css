@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+body {
+  background-color: #a9def9;
+  margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img {
+  display: block;
+  margin: auto;
+  border: 10px dashed #ff99c8;
+  max-width: 500px;
+  z-index: 2;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input {
+  background-color: #e4c1f9;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  display: block;
+  padding: 50px;
+  box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
+    -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
+    12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
+    -10px -7px 27px 1px #8e5cff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+label {
+  display: block;
+  text-align: right;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-stretch: expanded;
+  font-variant: small-caps;
+  text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.labelTemplate {
+  display: block;
+  text-align: right;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-stretch: expanded;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+button {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0 auto;
+  color: #ff99c8;
+  font-weight: bold;
+  display: inline;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 5px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  border: 1px dashed #ff99c8;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.inline {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-right: 10px;
+  padding: 3px 10px;
+}
+
+.button:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+input {
+  background-color: #fcf6bd;
+  border: 2px dashed #ff99c8;
+  text-align: center;
+  margin-left: 15px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+.container {
+  position: relative;
+}
+
+.diagonal {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+
+  height: 100%;
+  width: 100%;
+
+  transform: skewY(-5deg);
+
+  background-color: rgba(255, 200, 221, 0.5);
+  box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
+    -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
+    12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
+    -10px -7px 27px 1px #8e5cff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+  z-index: -1;
+}
+
+h2 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 60px;
   color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.3em #fe05e1, 0 0 0.4em #fe05e1;
+  transform: rotate(-5deg);
+  letter-spacing: 10px;
+  word-spacing: 5px;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  margin-left: 50px;
+  margin-bottom: -50px;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.labelBox {
+  margin-bottom: 30px;
+}
+
+.select {
+  width: 290px;
+  padding: 5px;
+  margin-bottom: 10px;
 }

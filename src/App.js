@@ -64,14 +64,14 @@ function App() {
               </label>
 
               <label id="Top text">
-                Top Text:
+                Top text:
                 <input
                   value={topText}
                   onChange={(event) => setTopText(event.currentTarget.value)}
                 />
               </label>
               <label id="Bottom text">
-                Bottom Text:
+                Bottom text:
                 <input
                   value={bottomText}
                   onChange={(event) => setBottomText(event.currentTarget.value)}

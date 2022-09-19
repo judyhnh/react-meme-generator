@@ -63,14 +63,14 @@ function App() {
                 </div>
               </label>
 
-              <label>
+              <label id="Top text">
                 Top Text:
                 <input
                   value={topText}
                   onChange={(event) => setTopText(event.currentTarget.value)}
                 />
               </label>
-              <label>
+              <label id="Bottom text">
                 Bottom Text:
                 <input
                   value={bottomText}
